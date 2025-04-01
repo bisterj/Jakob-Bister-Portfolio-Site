@@ -11,7 +11,7 @@ body {
 }
 #nav-half {
   display: flex;
-  gap: 30px;
+  gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
   align-items: center;
@@ -24,4 +24,33 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+.technologies {
+  border: solid black 2px;
+  border-radius: 10px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 20px;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  filter: grayscale(0%);
+}
+
+.logo:hover {
+  filter: grayscale(100%);
+}
+
+.grid {
+  position: relative;
+}
+.logo-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
+  visibility: hidden;
 }
