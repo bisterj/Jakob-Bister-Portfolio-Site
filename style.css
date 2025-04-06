@@ -1,56 +1,101 @@
-body {
-  margin: 0%;
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+p {
   font-family: Arial, Helvetica, sans-serif;
 }
-#navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2rem;
-  background-color: rgb(222, 222, 222);
+body {
+  margin: 0;
 }
-#nav-half {
+.navbar {
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(15, 17, 37);
+  color: white;
+  height: 10vh;
 }
 .nav-logo {
-  display: block;
-  width: 40%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-.technologies {
-  border: solid black 2px;
-  border-radius: 10px;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 50px;
-  padding: 20px;
-}
-.logo {
-  width: 200px;
-  height: auto;
-  filter: grayscale(0%);
-}
-
-.logo:hover {
-  filter: grayscale(100%);
-}
-
-.grid {
-  position: relative;
-}
-.logo-text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  align-self: center;
+  flex-basis: 50vw;
+  margin-left: 50px;
   font-size: 2rem;
-  visibility: hidden;
+}
+.nav-half {
+  flex-basis: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  margin-right: 50px;
+}
+.nav-half a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 20px;
+}
+.nav-half a:hover {
+  color: black;
+  background-color: rgb(255, 187, 61);
+}
+.hero {
+  margin: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.hero p {
+  color: darkgray;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.hero-left {
+  order: -1;
+  text-align: end;
+  align-self: center;
+  flex-basis: 600px;
+  font-size: 2rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me {
+  margin: 50px;
+  font-size: 1.5rem;
+  border: black solid 1px;
+  text-align: center;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 10px;
+}
+.contacts {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contacts a {
+  text-decoration: none;
+  color: black;
+}
+.contacts a:hover {
+  text-decoration: underline;
+  color: lightslategray;
+}
+.contact-logo {
+  width: 3rem;
+}
+footer {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px;
 }
