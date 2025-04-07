@@ -71,7 +71,7 @@ body {
 #contact-me {
   margin: 50px;
   font-size: 1.5rem;
-  border: black solid 1px;
+  border: orange solid 2px;
   text-align: center;
   width: fit-content;
   padding: 25px;
@@ -98,4 +98,48 @@ footer {
   font-size: 1.5rem;
   text-align: center;
   margin: 10px;
+}
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 800px;
+  height: 600px;
+  background-color: rgb(15, 17, 37);
+  color: orange;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.tech {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.tech p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.tech-card {
+  padding: 20px;
+  border-radius: 5px;
+}
+.tech-card:hover {
+  filter: grayscale(70%);
+  background-color: rgb(15, 17, 37);
+  color: orange;
+}
+.tech-logo {
+  width: 100%;
 }
